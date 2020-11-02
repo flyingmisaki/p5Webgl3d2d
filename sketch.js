@@ -20,14 +20,14 @@ function draw() {
   
   push()
   
-  let x = r + s * cos(a)
-  let y = r + s * sin(a)
+  let x = s * cos(a)
+  let y = s * sin(a)
   pattern.strokeWeight(0)
   pattern.fill('hsl('+ c +', 100%, 50%)')
   pattern.ellipse(x + 200, y + 200, 10, 10)
 
   a += 0.8        //angle
-  s += 0.5        //spacing
+  s += 1        //spacing
   c ++            //hue
 
   if (c >= 360) {
